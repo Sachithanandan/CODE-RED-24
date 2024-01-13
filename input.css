@@ -1,0 +1,77 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  width:100%;
+  height:100vh;
+  background:rgb(66,66,66);
+  color:white;
+  position:relative;
+}
+#container{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:50%;
+  height:40%;
+  text-align:center;
+  background:rgba(0, 0, 0, 0.2);
+  border-radius:20px;
+  padding:20px;
+}
+#container h2{
+  font-size:35px;
+  letter-spacing: 7px;
+}
+#input-container{
+  margin-top:25px;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+}
+#goal1, #goal2{
+  width:20%;
+  position:relative;
+  overflow:hidden;
+  border-radius:20px;
+  cursor:pointer;
+  transition:0.5s;
+}
+#goal1:hover, #goal2:hover{
+  border:3px solid coral;
+}
+#goal1:hover::before,#goal2:hover{
+  top:0;
+}
+#goal1:hover h3,#goal2:hover h3{
+  top:50%;
+}
+#goal1::before, #goal2::before{
+  content:"";
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.2);
+  position:absolute;
+  left:0;
+  top:100%;
+  transition:0.5s;
+  
+}
+#goal1 img, #goal2 img{
+  width:100%;
+  display:block;
+}
+.asthetic-txt{
+  position:absolute;
+  top:120%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  transition:0.5s;
+}
+#goal2{
+  width:30%;
+}

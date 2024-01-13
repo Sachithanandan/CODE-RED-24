@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width,initial-scale = 1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6df0247b10.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body onload = "bgchange()">
+    <div id="container">
+      <div id="content">
+        <h1>
+          Welcome To <span style = "color:coral;">P</span>ose<span style = "color:coral;">V</span>ista<span style = "color:coral;">!</span>
+        </h1>
+        <p id = "about-posevista"></p>
+        <button id="explore-us">
+          Explore Us
+        </button>
+      </div>
+    </div>
+
+      <!--For Login Page-->
+
+
+    <div id="login">
+      <form>
+          <div id="profile-img">
+            <div id="profile-container">
+              <input type="file" id = file required>
+              <label for="file" id = "upload-btn"><img src="images/1077114.png"></label>
+            </div>
+          </div>
+        <div>
+          <label for="username">UserName</label>
+          <div id = "username-container">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id = "username-input" required>
+          </div>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <div id = "email-container">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id = "email-input" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+          </div>
+        </div>
+        <button id="login-btn">
+          <a href="input.html" id = "login-btn">
+            Login
+        </a>
+        </button>
+        
+      </form>
+    </div>
+    <div id="login-display" class = "login-display">
+      <div id="login-img1" class = "login-img1">
+        <img src="images/Pose-Like-an-Influencer-kaique-rocha.jpeg" >
+      </div>
+      <div id="login-img2" class = "login-img2">
+        <img src="images/man-fashion-business-suit.jpg" >
+      </div>
+      <div id="login-img3" class = "login-img3">
+        <img src="images/HD-wallpaper-fashion-model-model-pose-yellow-dress-fields-woman.jpg" >
+      </div>
+      <div id="login-img4" class = "login-img4">
+        <img src="images/sexy-muscles-pose-bodybuilding-wallpaper-preview.jpg" >
+      </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src = "action.js"></script>
+  </body>
+</html>
