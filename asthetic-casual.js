@@ -1,10 +1,10 @@
 const poseData = [
-  'images/beachposes/beachpose1.jpg',
-  'images/beachposes/beachpose2.jpg',
-  'images/beachposes/beachpose3.jpg',
-  'images/beachposes/beachpose4.jpg',
-  'images/beachposes/beachpose5.jpg',
-  'images/beachposes/beachpose6.jpg'
+ 
+  'images/beachCasualPoses/pose1.jpg',
+  'images/beachCasualPoses/pose2.jpg',
+  'images/beachCasualPoses/pose3.jpg',
+  'images/beachCasualPoses/pose4.jpg',
+ 
 ];
 const id = id=>document.getElementById(id)
 const poseDiv = id('pose-div');

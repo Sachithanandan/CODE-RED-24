@@ -53,7 +53,8 @@ beachBg.addEventListener('click', ()=>{
   </h3>
 </div>
     <div id="casual">
-      <img src="${beachOutfitData[1].image}">
+    <a href = "asthetic-casual.html"><img src="${beachOutfitData[1].image}"></a>
+      
       <h3 id="beachOutfit-txt">
         <span style = "color:coral;font-size:25px;">${beachOutfitData[1].Fletter}</span>${beachOutfitData[1].name}
       </h3>

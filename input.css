@@ -89,6 +89,6 @@ body{
 #goal3::before{
   background:rgba(0, 0, 0, 0.3);
 }
-#beachoutfit::before{
+#beachoutfit::before,#casual::before{
   z-index:-1;
 }
