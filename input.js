@@ -47,7 +47,7 @@ beachBg.addEventListener('click', ()=>{
   let outfitHTML = '';
   outfitHTML += `
   <div id="beachoutfit">
-  <img src="${beachOutfitData[2].image}">
+  <a href = "poses.html"><img src="${beachOutfitData[2].image}"></a>
   <h3 id="beachOutfit-txt">
     <span style = "color:coral;font-size:25px;">${beachOutfitData[2].Fletter}</span>${beachOutfitData[2].name}
   </h3>
@@ -130,13 +130,6 @@ lighting.addEventListener('click',()=>{
   lightingOutfit.innerHTML = lightingHTML;
 });
 
-function beachPosefun(){
-  const poseData = [
-    'images/beachposes/beachpose1.jpg',
-    'images/beachposes/beachpose2.jpg',
-    'images/beachposes/beachpose3.jpg',
-    'images/beachposes/beachpose4.jpg',
-    'images/beachposes/beachpose5.jpg',
-    'images/beachposes/beachpose6.jpg'
-  ]
+
+  
   

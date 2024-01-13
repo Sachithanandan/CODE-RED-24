@@ -33,6 +33,7 @@ body{
   align-items:center;
   justify-content:space-around;
 }
+
 #background-input{
   display:none;
 }
@@ -88,4 +89,6 @@ body{
 #goal3::before{
   background:rgba(0, 0, 0, 0.3);
 }
-
+#beachoutfit::before{
+  z-index:-1;
+}
