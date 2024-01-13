@@ -42,30 +42,33 @@ function goal1changes(){
 }
 
 beachBg.addEventListener('click', ()=>{
+  const title = id('title');
+  title.innerHTML = `<span style = color:coral;>S</span>elect <span style = color:coral;>T</span>he <span style = color:coral;>O</span>utfit`;
   let outfitHTML = '';
   outfitHTML += `
-      <div id="hoodie">
-      <img src="${beachOutfitData[0].image}">
-      <h3 id="beachOutfit-txt">
-        <Span style = "color:coral;font-size:25px">${beachOutfitData[0].Fletter}</Span>${beachOutfitData[0].name}
-      </h3>
-    </div>
+  <div id="beachoutfit">
+  <img src="${beachOutfitData[2].image}">
+  <h3 id="beachOutfit-txt">
+    <span style = "color:coral;font-size:25px;">${beachOutfitData[2].Fletter}</span>${beachOutfitData[2].name}
+  </h3>
+</div>
     <div id="casual">
       <img src="${beachOutfitData[1].image}">
       <h3 id="beachOutfit-txt">
         <span style = "color:coral;font-size:25px;">${beachOutfitData[1].Fletter}</span>${beachOutfitData[1].name}
       </h3>
     </div>
-    <div id="beachoutfit">
-      <img src="${beachOutfitData[2].image}">
+    <div id="hoodie">
+      <img src="${beachOutfitData[0].image}">
       <h3 id="beachOutfit-txt">
-        <span style = "color:coral;font-size:25px;">${beachOutfitData[2].Fletter}</span>${beachOutfitData[2].name}
+        <Span style = "color:coral;font-size:25px">${beachOutfitData[0].Fletter}</Span>${beachOutfitData[0].name}
       </h3>
     </div>
   `;
   backgroundInput.style.display = "none";
   container.style.height = "50%";
   beachOutfit.innerHTML = outfitHTML;
+  
 })
 
 const greeneryOutfitData = [{
@@ -126,3 +129,14 @@ lighting.addEventListener('click',()=>{
   container.style.height = "50%";
   lightingOutfit.innerHTML = lightingHTML;
 });
+
+function beachPosefun(){
+  const poseData = [
+    'images/beachposes/beachpose1.jpg',
+    'images/beachposes/beachpose2.jpg',
+    'images/beachposes/beachpose3.jpg',
+    'images/beachposes/beachpose4.jpg',
+    'images/beachposes/beachpose5.jpg',
+    'images/beachposes/beachpose6.jpg'
+  ]
+  
