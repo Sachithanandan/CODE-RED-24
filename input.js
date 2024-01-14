@@ -60,7 +60,8 @@ beachBg.addEventListener('click', ()=>{
       </h3>
     </div>
     <div id="hoodie">
-      <img src="${beachOutfitData[0].image}">
+    <a href = "asthetic-beach-hoodie.html"><img src="${beachOutfitData[0].image}"></a>
+      
       <h3 id="beachOutfit-txt">
         <Span style = "color:coral;font-size:25px">${beachOutfitData[0].Fletter}</Span>${beachOutfitData[0].name}
       </h3>
@@ -70,23 +71,29 @@ beachBg.addEventListener('click', ()=>{
   container.style.height = "50%";
   beachOutfit.innerHTML = outfitHTML;
   
-})
+});
 
 const greeneryOutfitData = [{
   completeName: 'hoodie',
   image: "images/outfit/hoodi.jpeg",
   Fletter : "H",
-  name : "oodie"
+  name : "oodie",
+  link : "asthetic-greenery-hoodie.html",
+  lightingLink : 'asthetic-lighting-hoodie.html'
 },{
   completeName: 'casual',
   image: "images/outfit/casual.jpeg",
   Fletter : "C",
-  name : "asual"
+  name : "asual",
+  link: "asthetic-casual.html",
+  lightingLink : 'asthetic-lighting-casual.html'
 }, {
   completeName: 'suit',
   image: "images/outfit/suit.jpeg",
   Fletter : "S",
-  name : "uit"
+  name : "uit",
+  link: "asthetic-greenery-suit.html",
+  lightingLink : 'asthetic-lighting-suit.html'
 }];
 
 const greenery = id('greenery');
@@ -97,7 +104,7 @@ greenery.addEventListener('click',()=>{
   for(let i = 0;i<len;i++){
     greeneryHTML += `
     <div id="${greeneryOutfitData[i].completeName}">
-    <img src="${greeneryOutfitData[i].image}">
+    <a href = "${greeneryOutfitData[i].link}"><img src="${greeneryOutfitData[i].image}"></a>
     <h3 id="greenery-txt">
       <Span style = "color:coral;font-size:25px">${greeneryOutfitData[i].Fletter}</Span>${greeneryOutfitData[i].name}
     </h3>
@@ -119,7 +126,7 @@ lighting.addEventListener('click',()=>{
   for(let i = 0;i<len;i++){
     lightingHTML += `
     <div id="${greeneryOutfitData[i].completeName}">
-    <img src="${greeneryOutfitData[i].image}">
+    <a href = "${greeneryOutfitData[i].lightingLink}"><img src="${greeneryOutfitData[i].image}"></a>
     <h3 id="lighting-txt">
       <Span style = "color:coral;font-size:25px">${greeneryOutfitData[i].Fletter}</Span>${greeneryOutfitData[i].name}
     </h3>
@@ -131,6 +138,37 @@ lighting.addEventListener('click',()=>{
   lightingOutfit.innerHTML = lightingHTML;
 });
 
-
-  
-  
+const fitnessBgData = [{
+  name:"mirror",
+  src : "fitnessBackground/h1.jpg",
+  Fletter : 'M',
+  completeName:'irror'
+},{
+  name:"weight-load",
+  src : "fitnessBackground/h2.jpg",
+  Fletter : 'W',
+  completeName:'eight Load'
+},{
+  name:"weight-lifting",
+  src : "fitnessBackground/h3.jpg",
+  Fletter : 'W',
+  completeName:'eight Lifting'
+}
+];
+  const inputContainer = id('input-container');
+  goalImg2.addEventListener('click',()=>{
+    let goal2BgHTML = '';
+    let len = fitnessBgData.length;
+    for(let i = 0;i<len;i++){
+      goal2BgHTML += `
+      <div id="${fitnessBgData[i].name}">
+      <img src="images/${fitnessBgData[i].src}">
+      <h3 id="fitness-bg-txt">
+        <Span style = "color:coral;font-size:25px">${fitnessBgData[i].Fletter}</Span>${fitnessBgData[i].completeName}
+      </h3>
+    </div>
+      `;
+    }
+    console.log(goal2BgHTML)
+    inputContainer.innerHTML = goal2BgHTML;
+  });

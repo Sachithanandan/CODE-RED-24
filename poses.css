@@ -20,9 +20,11 @@ body{
   font-size:30px;
   letter-spacing: 7px;
   color:white;
+  position:relative;
 }
 #pose-div{
   margin-top:20px;
+  height:90%;
   display:flex;
   align-items:center;
   flex-wrap: wrap;

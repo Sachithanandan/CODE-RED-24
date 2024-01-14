@@ -20,6 +20,7 @@ body{
   height:40%;
   text-align:center;
   background:rgba(0, 0, 0, 0.2);
+  box-shadow:0 0 10px black;
   border-radius:20px;
   padding:20px;
 }
@@ -27,7 +28,7 @@ body{
   font-size:35px;
   letter-spacing: 7px;
 }
-#goal-container, #background-input,#beach-outfit,#greenery-outfit,#lighting-outfit{
+#goal-container, #background-input,#beach-outfit,#greenery-outfit,#lighting-outfit,#input-container{
   margin-top:25px;
   display:flex;
   align-items:center;
@@ -37,7 +38,7 @@ body{
 #background-input{
   display:none;
 }
-#goal1, #goal2, #goal3,#beach,#greenery,#lighting,#hoodie,#casual,#beachoutfit,#suit{
+#goal1, #goal2, #goal3,#beach,#greenery,#lighting,#hoodie,#casual,#beachoutfit,#suit,#mirror,#weight-load,#weight-lifting{
   width:20%;
   position:relative;
   overflow:hidden;
@@ -46,16 +47,16 @@ body{
   letter-spacing: 5px;
   transition:0.5s;
 }
-#goal1:hover, #goal2:hover, #goal3:hover, #beach:hover, #greenery:hover, #lighting:hover,#hoodie:hover,#casual:hover,#beachoutfit:hover,#suit:hover{
+#goal1:hover, #goal2:hover, #goal3:hover, #beach:hover, #greenery:hover, #lighting:hover,#hoodie:hover,#casual:hover,#beachoutfit:hover,#suit:hover,#mirror:hover,#weight-load:hover,#weight-lifting:hover{
   border:3px solid coral;
 }
-#goal1:hover::before,#goal2:hover::before, #goal3:hover::before, #beach:hover::before, #greenery:hover::before, #lighting:hover::before, #hoodie:hover::before, #casual:hover::before, #beachoutfit:hover::before, #suit:hover::before{
+#goal1:hover::before,#goal2:hover::before, #goal3:hover::before, #beach:hover::before, #greenery:hover::before, #lighting:hover::before, #hoodie:hover::before, #casual:hover::before, #beachoutfit:hover::before, #suit:hover::before, #mirror:hover::before, #weight-load:hover::before, #weight-lifting:hover::before{
   top:0;
 }
-#goal1:hover h3,#goal2:hover h3, #goal3:hover h3, #beach:hover h3, #greenery:hover h3, #lighting:hover h3, #hoodie:hover h3, #casual:hover h3, #beachoutfit:hover h3, #suit:hover h3{
+#goal1:hover h3,#goal2:hover h3, #goal3:hover h3, #beach:hover h3, #greenery:hover h3, #lighting:hover h3, #hoodie:hover h3, #casual:hover h3, #beachoutfit:hover h3, #suit:hover h3, #mirror:hover h3, #weight-load:hover h3, #weight-lifting:hover h3{
   top:50%;
 }
-#goal1::before, #goal2::before, #goal3::before, #beach::before, #greenery::before, #lighting::before, #hoodie::before, #casual::before, #beachoutfit::before,#suit::before{
+#goal1::before, #goal2::before, #goal3::before, #beach::before, #greenery::before, #lighting::before, #hoodie::before, #casual::before, #beachoutfit::before,#suit::before,#mirror::before,#weight-load::before,#weight-lifting::before{
   content:"";
   width:100%;
   height:100%;
@@ -66,11 +67,11 @@ body{
   transition:0.5s;
   
 }
-#goal1 img, #goal2 img, #goal3 img, #beach img, #greenery img, #lighting img, #hoodie img, #casual img, #beachoutfit img, #suit img{
+#goal1 img, #goal2 img, #goal3 img, #beach img, #greenery img, #lighting img, #hoodie img, #casual img, #beachoutfit img, #suit img, #mirror img, #weight-load img, #weight-lifting img{
   width:100%;
   display:block;
 }
-.asthetic-txt,#goal-txt,#beachOutfit-txt,#greenery-txt,#lighting-txt{
+.asthetic-txt,#goal-txt,#beachOutfit-txt,#greenery-txt,#lighting-txt,#fitness-bg-txt{
   position:absolute;
   top:120%;
   left:50%;
@@ -79,6 +80,12 @@ body{
 }
 #goal2,#goal3,#beach,#greenery{
   width:30%;
+}
+#mirror,#weight-load{
+  width:33%;
+}
+#weight-lifting{
+ width:28%;
 }
 #greenery{
   width:27%;
@@ -89,6 +96,6 @@ body{
 #goal3::before{
   background:rgba(0, 0, 0, 0.3);
 }
-#beachoutfit::before,#casual::before{
+#beachoutfit::before,#casual::before,#hoodie::before,#suit::before{
   z-index:-1;
 }
